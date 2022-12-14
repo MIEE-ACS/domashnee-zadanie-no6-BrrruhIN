@@ -1,0 +1,29 @@
+﻿<Window x:Class="homework6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:homework6"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ComboBox x:Name="combobox" HorizontalAlignment="Left" Margin="272,217,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="Евро"/>
+            <ComboBoxItem Content="Доллар"/>
+            <ComboBoxItem Content="Юань"/>
+        </ComboBox>
+        <TextBox x:Name="textbox1" HorizontalAlignment="Left" Margin="85,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textbox2" HorizontalAlignment="Left" Margin="85,293,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="button1" Content="Перевести" HorizontalAlignment="Left" Margin="449,217,0,0" VerticalAlignment="Top" Width="304" RenderTransformOrigin="0.5,0.5" Click="Button_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+
+    </Grid>
+</Window>
